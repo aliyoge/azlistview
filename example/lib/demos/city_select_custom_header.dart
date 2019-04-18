@@ -153,7 +153,7 @@ class _CitySelectCustomHeaderRouteState
             flex: 1,
             child: AzListView(
               data: _cityList,
-              itemBuilder: (context, model) => _buildListItem(model),
+              itemBuilder: (context, model, index) => _buildListItem(model),
               suspensionWidget: _buildSusWidget(_suspensionTag),
               isUseRealIndex: true,
               itemHeight: _itemHeight,

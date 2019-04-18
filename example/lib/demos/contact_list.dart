@@ -127,7 +127,7 @@ class _ContactListRouteState extends State<ContactListRoute> {
   Widget build(BuildContext context) {
     return AzListView(
       data: _contacts,
-      itemBuilder: (context, model) => _buildListItem(model),
+      itemBuilder: (context, model, index) => _buildListItem(model),
       isUseRealIndex: true,
       itemHeight: _itemHeight,
       suspensionHeight: _suspensionHeight,

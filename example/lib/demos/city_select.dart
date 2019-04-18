@@ -126,7 +126,7 @@ class _CitySelectRouteState extends State<CitySelectRoute> {
             child: AzListView(
               data: _cityList,
               topData: _hotCityList,
-              itemBuilder: (context, model) => _buildListItem(model),
+              itemBuilder: (context, model, index) => _buildListItem(model),
               suspensionWidget: _buildSusWidget(_suspensionTag),
               isUseRealIndex: true,
               itemHeight: _itemHeight,
